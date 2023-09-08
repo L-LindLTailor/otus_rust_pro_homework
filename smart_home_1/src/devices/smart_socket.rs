@@ -8,10 +8,11 @@ impl SmartSocket {
     pub fn new(serial_number: &str) -> Self {
         SmartSocket {
             description: format!(
-                "Device: \
-                name: {} \n \
-                id: {}",
-                DEVICE_NAME, serial_number,
+                "Device info \n \
+                Name: {} \n \
+                Serial Number: {}",
+                DEVICE_NAME,
+                serial_number,
             ),
         }
     }
